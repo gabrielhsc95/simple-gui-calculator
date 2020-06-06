@@ -99,20 +99,20 @@ def result():
         current = float(screen.get())
 
     if operator == "+":
-        final = memory + current
+        answer = memory + current
     if operator == "-":
-        final = memory - current
+        answer = memory - current
     if operator == "*":
-        final = memory * current
+        answer = memory * current
     if operator == "/":
         if current == 0.0:
             clear()
-            final = "ERROR"
+            answer = "ERROR"
         else:
-            final = memory / current
+            answer = memory / current
 
     clear()
-    screen.insert(0, str(final))
+    screen.insert(0, str(answer))
 
 
 # Screen
